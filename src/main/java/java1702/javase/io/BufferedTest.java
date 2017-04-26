@@ -9,11 +9,11 @@ import java.io.*;
 public class BufferedTest {
     public static void main(String[] args) {
         try (
-                InputStream inputStream = new FileInputStream("");
-                OutputStream out = new FileOutputStream("");
+                BufferedInputStream in = new BufferedInputStream(new FileInputStream(""));
+                BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(""))
         ) {
             int i;
-            while ((i = inputStream.read()) != -1) {
+            while ((i = in.read()) != -1) {
                 out.write(i);
             }
         } catch (IOException e) {

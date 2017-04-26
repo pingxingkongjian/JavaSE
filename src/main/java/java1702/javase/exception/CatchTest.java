@@ -4,7 +4,7 @@ package java1702.javase.exception;
  * Created by 刘晋勇 on.
  * 2017/4/17  9:58.
  */
-public class CatchTest {
+public class    CatchTest {
     public static void main(String[] args) {
         try {
             System.out.println(1/0);
