@@ -1,4 +1,4 @@
-package java1702.javase.multithreading;
+package java1702.javase.house;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
