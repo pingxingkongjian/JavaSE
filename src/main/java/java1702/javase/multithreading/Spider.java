@@ -16,7 +16,7 @@ import java.io.IOException;
 public class Spider {
     public static void main(String[] args) throws IOException {
         String url = "http://bj.lianjia.com/ershoufang/chaoyang/";
-        Document document = Jsoup.connect(url).cookie("lianjia_uuid","e7bb83d3-6db3-48cd-998b-94777fe2a237").get();
+        Document document = Jsoup.connect(url).cookie("lianjia_uuid", "e7bb83d3-6db3-48cd-998b-94777fe2a237").get();
         Elements element = document.select("li[class=clear]");
         for (Element element1 : element) {
 //            String region = element1.select("a[data-el=region]").first().text();
@@ -30,6 +30,5 @@ public class Spider {
             }
 
         }
-
     }
 }
