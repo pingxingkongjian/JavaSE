@@ -11,7 +11,7 @@ public class Account {
         this.money = money;
     }
 
-    void withdraw(int money) {
+     synchronized void withdraw(int money) {
         System.out.println(Thread.currentThread().getName());
         if (this.money - money < 0) {
             System.out.println("Not enough...");
