@@ -35,7 +35,7 @@ class Person implements Runnable {
     private static Account account = new Account(1000);
 
     @Override
-    public void run() {
+    public void run()  {
         account.withdraw(1000);
     }
 
